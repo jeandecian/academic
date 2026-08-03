@@ -152,6 +152,89 @@
           padding: 4rem 1.5rem;
         }
       }
+
+      .pub-title {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--text-color);
+        line-height: 1.35;
+      }
+
+      .pub-authors {
+        font-family: var(--font-sans);
+        font-size: 0.95rem;
+        color: var(--text-color);
+        margin-top: 0.15rem;
+      }
+
+      .pub-details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.35rem;
+      }
+
+      .pub-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-top: 0.5rem;
+        font-family: var(--font-sans);
+        font-size: 0.85rem;
+      }
+
+      .pub-links a {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease;
+      }
+
+      .pub-links a:hover {
+        border-bottom-color: var(--accent-color);
+      }
+
+      .pub-links a::after {
+        content: " ↗";
+        font-size: 0.75rem;
+      }
+
+      .detail-tag {
+        font-family: var(--font-sans);
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.2rem 0.55rem;
+        border-radius: 4px;
+        letter-spacing: 0.02em;
+      }
+
+      .detail-tag.oral {
+        background-color: #e0f2fe;
+        color: #0369a1;
+      }
+
+      .detail-tag.poster {
+        background-color: #f3f4f6;
+        color: #374151;
+      }
+
+      .detail-tag.honor {
+        background-color: #fef3c7;
+        color: #92400e;
+      }
+
+      .timeline-badge {
+        font-family: var(--font-sans);
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .timeline-badge.status {
+        color: var(--accent-color);
+      }
     </style>
   </head>
   <body>
@@ -201,6 +284,146 @@
                 Bachelor of Engineering (B.Eng.) in Computer Engineering
               </div>
               <div class="timeline-institution">Polytechnique Montréal</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="research">
+        <h2>Research & Publications</h2>
+        <div class="timeline-stream">
+          <div class="timeline-entry">
+            <div class="timeline-meta">
+              <span class="timeline-date">2026</span>
+              <span class="timeline-badge status">Master's Thesis</span>
+              <div class="pub-details">
+                <span class="detail-tag poster">Poster</span>
+                <span class="detail-tag honor">Award</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <div class="pub-title">
+                L'impact environnemental des cyberattaques : étude de la
+                sollicitation des ressources système et de la consommation
+                énergétique
+              </div>
+              <div class="pub-authors"><strong>Jean Decian</strong></div>
+              <div class="pub-links">
+                <a
+                  href="https://constellation.uqac.ca/id/eprint/10491/"
+                  target="_blank"
+                  rel="noopener"
+                  >Institutional Repository</a
+                >
+                <a
+                  href="https://www.uqac.ca/jrc/recipiendaires-2026/"
+                  target="_blank"
+                  rel="noopener"
+                  >Scientific Poster Award</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-meta">
+              <span class="timeline-date">2026</span>
+              <span class="timeline-badge status">IEEE Access</span>
+            </div>
+            <div class="timeline-content">
+              <div class="pub-title">
+                Cyberattacks Are a Major Source of Global Carbon Emissions
+              </div>
+              <div class="pub-authors">
+                <strong>Jean Decian</strong>, Fehmi Jaafar
+              </div>
+              <div class="pub-links">
+                <a
+                  href="https://www.doi.org/10.1109/ACCESS.2026.3655210"
+                  target="_blank"
+                  rel="noopener"
+                  >DOI</a
+                >
+                <a
+                  href="https://www.uqac.ca/uqactualites/2026/02/13/les-cyberattaques-la-pollution-invisible-du-numerique/"
+                  target="_blank"
+                  rel="noopener"
+                  >UQActualités Article</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-meta">
+              <span class="timeline-date">2025</span>
+              <span class="timeline-badge status">EAI SAFER-TEA 2024</span>
+              <div class="pub-details">
+                <span class="detail-tag poster">Poster</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <div class="pub-title">
+                Estimating the Carbon Footprint of Cyberattacks: The Ransomware
+                Case
+              </div>
+              <div class="pub-authors">
+                Fehmi Jaafar, <strong>Jean Decian</strong>
+              </div>
+              <div class="pub-links">
+                <a
+                  href="https://www.doi.org/10.1007/978-3-032-05832-4_3"
+                  target="_blank"
+                  rel="noopener"
+                  >DOI</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-meta">
+              <span class="timeline-date">2024</span>
+              <span class="timeline-badge status">IEEE DASC 2024</span>
+              <div class="pub-details">
+                <span class="detail-tag oral">Presented</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <div class="pub-title">
+                Wiki-IoT: Registering and Evaluating the Security and Resilience
+                of Internet of Things and Connected Devices Using a
+                Collaborative Platform
+              </div>
+              <div class="pub-authors">
+                <strong>Jean Decian</strong>, Fehmi Jaafar
+              </div>
+              <div class="pub-links">
+                <a
+                  href="https://www.doi.org/10.1109/DASC64200.2024.00008"
+                  target="_blank"
+                  rel="noopener"
+                  >DOI</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-meta">
+              <span class="timeline-date">2021</span>
+              <span class="timeline-badge status">Book Chapter</span>
+            </div>
+            <div class="timeline-content">
+              <div class="pub-title">
+                Social Network Cyberattacks and Security Issues
+              </div>
+              <div class="pub-authors">
+                Fehmi Jaafar, <strong>Jean Decian</strong>
+              </div>
+              <div class="pub-links">
+                <a
+                  href="https://www.pulaval.com/livres/medias-sociaux-perspectives-sur-les-defis-lies-a-la-cybersecurite-la-gouvernementalite-algorithmique-et-l-intelligence-artificielle"
+                  target="_blank"
+                  rel="noopener"
+                  >Book</a
+                >
+              </div>
             </div>
           </div>
         </div>
